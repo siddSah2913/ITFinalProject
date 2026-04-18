@@ -1,0 +1,207 @@
+<!-- this is index(home) page -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mithila Cultural Guide - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Header -->
+        <div id="header">
+            <div>
+                <h1>Mithila Cultural Guide</h1>
+                <p>Exploring the Ancient Land of Art, Tradition and the Maithil People</p>
+            </div>
+            <div>
+                <p>&#x1F3A8; The Living Art of Mithila</p>
+            </div>
+        </div>
+
+        <!-- Main Navigation -->
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About Mithila</a></li>
+                <li><a href="culture.html">Culture &amp; Art</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="tips.html">Visit Mithila</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Image Slider / Banner -->
+        <div id="slider">
+            <div class="slide slide-1 active">
+                <img src="images/mithila-banner.jpg" alt="Mithila landscape banner" class="slide-bg-img">
+                <div class="slide-text">
+                    <h2>Welcome to Mithila</h2>
+                    <p>A land of ancient culture, vibrant Madhubani art, and rich heritage</p>
+                </div>
+            </div>
+            <div class="slide slide-2">
+                <img src="images/madhubani.jpg" alt="Madhubani painting" class="slide-bg-img">
+                <div class="slide-text">
+                    <h2>Madhubani Painting</h2>
+                    <p>One of the world's most recognised folk art traditions - born in Mithila</p>
+                </div>
+            </div>
+            <div class="slide slide-3">
+                <img src="images/festival.jpg" alt="Mithila festival celebration" class="slide-bg-img">
+                <div class="slide-text">
+                    <h2>Festivals &amp; Traditions</h2>
+                    <p>Chhath Puja, Sama-Chakeva, Vivah Panchami - alive across Nepal and India</p>
+                </div>
+            </div>
+            <div id="slider-controls">
+                <button class="on" onclick="goSlide(0)"></button>
+                <button onclick="goSlide(1)"></button>
+                <button onclick="goSlide(2)"></button>
+            </div>
+        </div>
+
+        <!-- Page Content -->
+        <div id="content">
+
+            <h2>What is Mithila?</h2>
+
+            <div class="two-col">
+                <div class="col">
+                    <p>
+                        Mithila is an ancient cultural and geographical region whose living heart lies
+                        in Nepal's <strong>Madhesh Province</strong> - the eastern Terai plains stretching
+                        from Saptari in the east to Parsa in the west. Cities like Janakpur, Rajbiraj,
+                        Lahan, Jaleshwar, and Birgunj are all part of this cultural world. Mithila
+                        culture also extends across the border into northern Bihar, India.
+                    </p>
+                    <p>
+                        The region is home to the Maithil people, who speak the Maithili language - one
+                        of the 22 scheduled languages of India and a major language of Nepal's Madhesh
+                        Province. Mithila is celebrated worldwide for its extraordinary tradition of
+                        <strong>Mithila (Madhubani) painting</strong>, still practised today on the
+                        walls of homes across Nepal's Terai villages.
+                    </p>
+                    <div class="highlight-box">
+                        <strong>Did you know?</strong> Mithila is the birthplace of Goddess Sita,
+                        the central figure of the Hindu epic Ramayana. <strong>Janakpur</strong> in
+                        Nepal's Madhesh Province is her sacred birthplace and the site of her marriage
+                        to Lord Ram - drawing pilgrims from across South Asia and the world.
+                    </div>
+                    <img src="images/mithilacol.jpg" alt="Mithila culture" class="content-img">
+                </div>
+                <div class="col">
+                    <h3>Quick Facts</h3>
+                    <table class="data-table">
+                        <tr>
+                            <th>Category</th>
+                            <th>Detail</th>
+                        </tr>
+                        <tr>
+                            <td>Core Region (Nepal)</td>
+                            <td>Madhesh Province - Dhanusha, Saptari, Siraha, Mahottari, Sarlahi, Rautahat, Bara, Parsa
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Also Extends To</td>
+                            <td>Northern Bihar, India (Madhubani, Darbhanga districts)</td>
+                        </tr>
+                        <tr>
+                            <td>Language</td>
+                            <td>Maithili</td>
+                        </tr>
+                        <tr>
+                            <td>Sacred Capital (Nepal)</td>
+                            <td>Janakpur (Janakpurdham)</td>
+                        </tr>
+                        <tr>
+                            <td>Other Key Nepal Cities</td>
+                            <td>Rajbiraj, Lahan, Jaleshwar, Birgunj, Malangwa, Gaur</td>
+                        </tr>
+                        <tr>
+                            <td>Famous For</td>
+                            <td>Mithila Painting, Chhath Puja, Vivah Panchami, Maithili literature</td>
+                        </tr>
+                        <tr>
+                            <td>Sacred Figure</td>
+                            <td>Goddess Sita (Janaki) - born in Janakpur, Nepal</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <img src="images/mithilahigh.jpg" alt="Mithila highlights" class="content-img-full">
+
+            <!-- Local Navigation -->
+            <div id="local-nav">
+                <span>Explore:</span>
+                <a href="about.html">About the Region</a>
+                <a href="culture.html">Culture &amp; Art</a>
+                <a href="tips.html">Plan Your Visit</a>
+                <a href="gallery.html">Photo Gallery</a>
+            </div>
+
+            <h3>Useful External Links</h3>
+            <ul class="ext-links-list">
+                <li>
+                    <a href="https://www.welcomenepal.com" target="_blank">
+                        Nepal Tourism Board (official site)
+                    </a>
+                </li>
+                <li>
+                    <a href="https://en.wikipedia.org/wiki/Mithila_region" target="_blank">
+                        Mithila Region - Wikipedia
+                    </a>
+                </li>
+                <li>
+                    <a href="https://en.wikipedia.org/wiki/Madhubani_art" target="_blank">
+                        Madhubani Art - Wikipedia
+                    </a>
+                </li>
+            </ul>
+
+        </div><!-- end content -->
+
+        <!-- FOOTER with secondary text-only navigation -->
+        <div id="footer">
+            <div id="footer-nav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Mithila</a>
+                <a href="culture.html">Culture &amp; Art</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="tips.html">Visit Mithila</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <p><strong>Mithila Cultural Guide</strong> | Janakpur, Madhesh Province, Nepal</p>
+            <p>Email: <a href="mailto:info@mithilaculture.com" class="email-link">info@mithilaculture.com</a></p>
+            <p>&copy; 2026 Mithila Cultural Guide. All rights reserved.</p>
+        </div>
+
+    </div><!-- end wrapper -->
+
+    <script>
+        var current = 0;
+        var slides = document.querySelectorAll('.slide');
+        var dots = document.querySelectorAll('#slider-controls button');
+
+        function goSlide(n) {
+            slides[current].classList.remove('active');
+            dots[current].classList.remove('on');
+            current = n;
+            slides[current].classList.add('active');
+            dots[current].classList.add('on');
+        }
+
+        setInterval(function () {
+            goSlide((current + 1) % slides.length);
+        }, 3500);
+    </script>
+
+</body>
+
+</html>
