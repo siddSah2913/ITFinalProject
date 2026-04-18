@@ -1,0 +1,195 @@
+<!-- this is gallery page -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mithila Cultural Guide - Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- this is header -->
+    <div id="wrapper">
+
+        <div id="header">
+            <div>
+                <h1>Mithila Cultural Guide</h1>
+                <p>Exploring the Ancient Land of Art, Tradition and the Maithil People</p>
+            </div>
+            <div>
+                <p>Photo Gallery</p>
+            </div>
+        </div>
+        <!-- this is main navigation -->
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Mithila</a></li>
+                <li><a href="culture.html">Culture &amp; Art</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="tips.html">Visit Mithila</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- this is content -->
+        <div id="content">
+
+            <h2>Photo Gallery</h2>
+            <p>
+                Click on any thumbnail below to view a larger version of the image.
+                The gallery showcases Mithila's sacred temples of Nepal, Madhubani art traditions,
+                festival celebrations, historic sites across Madhesh Province, and the landscapes of
+                the Terai heartland.
+            </p>
+
+            <img src="images/gallerybanner.jpg" alt="Mithila art and temples gallery banner" class="pageimg full">
+
+            <!-- Lightbox overlay -->
+            <div id="lightbox" onclick="closeLightbox()">
+                <span id="lightbox-close" onclick="closeLightbox()">&times;</span>
+                <img id="lightbox-img" src="" alt="Enlarged gallery image">
+                <p id="lightbox-caption"></p>
+            </div>
+
+            <!-- Gallery grid -->
+            <div id="gallery-grid">
+
+                <div class="gallery-item">
+                    <a href="#" class="thumb-link" onclick="openLightbox(
+                       'images/mithila-banner.jpg',
+                       'Janaki Mandir (Temple), Janakpur, Madhesh Province, Nepal - built 1911, dedicated to Goddess Sita'
+                   ); return false;">
+                        <img src="images/mithila-banner.jpg"
+                            alt="Janaki Mandir temple in Janakpur, Nepal - a white marble temple dedicated to Goddess Sita">
+                    </a>
+                    <p class="gallery-caption">Janaki Mandir, Janakpur</p>
+                </div>
+
+                <div class="gallery-item">
+                    <a href="#" class="thumb-link" onclick="openLightbox(
+                       'images/madhubani.jpg',
+                       'Traditional Mithila (Madhubani) Painting - practised by women of the Mithila region for thousands of years'
+                   ); return false;">
+                        <img src="images/madhubani.jpg"
+                            alt="A colourful traditional Madhubani painting showing Hindu deities and patterns">
+                    </a>
+                    <p class="gallery-caption">Mithila Painting</p>
+                </div>
+
+                <div class="gallery-item">
+                    <a href="#" class="thumb-link" onclick="openLightbox(
+                       'images/festival.jpg',
+                       'Chhath Puja - Mithila\'s most sacred festival; devotees offer prayers to the Sun at rivers and ponds'
+                   ); return false;">
+                        <img src="images/festival.jpg"
+                            alt="Chhath Puja celebration with devotees standing in a river offering prayers to the sun">
+                    </a>
+                    <p class="gallery-caption">Chhath Puja Festival</p>
+                </div>
+
+                <div class="gallery-item">
+                    <a href="#" class="thumb-link" onclick="openLightbox(
+                       'images/ganga.jpg',
+                       'Mithila Painting by Ganga Devi - a celebrated master artist from the Mithila tradition'
+                   ); return false;">
+                        <img src="images/ganga.jpg"
+                            alt="A detailed Mithila painting by the artist Ganga Devi showing traditional figures and patterns">
+                    </a>
+                    <p class="gallery-caption">Mithila Art by Ganga Devi</p>
+                </div>
+
+                <div class="gallery-item">
+                    <a href="#" class="thumb-link" onclick="openLightbox(
+                       'images/mithilahigh.jpg',
+                       'Ram and Sita depicted in Mithila painting style - the divine couple whose story centres on Janakpur, Nepal'
+                   ); return false;">
+                        <img src="images/mithilahigh.jpg"
+                            alt="Ram and Sita depicted in the traditional Madhubani painting style with intricate borders">
+                    </a>
+                    <p class="gallery-caption">Ram-Sita - Mithila Art</p>
+                </div>
+
+                <div class="gallery-item">
+                    <a href="#" class="thumb-link" onclick="openLightbox(
+                       'images/railway.jpg',
+                       'Janakpur Railway Station - the historic narrow-gauge railway connecting Janakpur, Nepal to Jaynagar, India'
+                   ); return false;">
+                        <img src="images/railway.jpg"
+                            alt="Janakpur Railway Station, connecting Nepal to India, a historic cross-border rail link">
+                    </a>
+                    <p class="gallery-caption">Janakpur Railway Station</p>
+                </div>
+
+                <div class="gallery-item">
+                    <a href="#" class="thumb-link" onclick="openLightbox(
+                       'images/culturepainting.jpg',
+                       'Fish (Maach) motif in Mithila art - symbol of good luck, fertility, and prosperity in Maithil culture'
+                   ); return false;">
+                        <img src="images/culturepainting.jpg"
+                            alt="Fish motif drawn in Madhubani art style, symbolising luck, fertility, and abundance">
+                    </a>
+                    <p class="gallery-caption">Fish Motif - Mithila Art</p>
+                </div>
+
+                <div class="gallery-item">
+                    <a href="#" class="thumb-link" onclick="openLightbox(
+                       'images/aboutbanner.jpg',
+                       'The Terai Plains of Madhesh Province, Nepal - the fertile heartland of Mithila'
+                   ); return false;">
+                        <img src="images/aboutbanner.jpg"
+                            alt="Green Terai plains landscape in Nepal, the fertile flatlands that form the Mithila region">
+                    </a>
+                    <p class="gallery-caption">Terai Plains, Madhesh Province</p>
+                </div>
+
+            </div><!-- end gallery-grid -->
+
+            <!-- this is highlight box -->
+            <div class="highlight-box" style="margin-top:24px;">
+                <strong>About Mithila Art in Nepal:</strong> Many of the paintings in this gallery reflect
+                the living tradition practised across Nepal's Madhesh Province - from the Janakpur Women's
+                Development Centre to village homes in Saptari, Siraha, Mahottari, and beyond. The fish,
+                lotus, and deity motifs seen here are painted on home walls across the region to mark
+                weddings, festivals, and auspicious occasions.
+            </div>
+
+        </div><!-- end content -->
+        <!-- this is footer -->
+        <div id="footer">
+            <div id="footer-nav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Mithila</a>
+                <a href="culture.html">Culture &amp; Art</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="tips.html">Visit Mithila</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <p><strong>Mithila Cultural Guide</strong> | Janakpur, Madhesh Province, Nepal</p>
+            <p>Email: <a href="mailto:info@mithilaculture.com" class="email-link">info@mithilaculture.com</a></p>
+            <p>&copy; 2026 Mithila Cultural Guide. All rights reserved.</p>
+        </div>
+
+    </div>
+    <!-- this is javascript -->
+    <script>
+        function openLightbox(src, caption) {
+            document.getElementById('lightbox-img').src = src;
+            document.getElementById('lightbox-caption').innerText = caption;
+            document.getElementById('lightbox').style.display = 'block';
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = 'none';
+            document.getElementById('lightbox-img').src = '';
+        }
+
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') { closeLightbox(); }
+        });
+    </script>
+
+</body>
+
+</html>
