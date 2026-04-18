@@ -1,0 +1,29 @@
+Mithila Cultural Guide (Site Map)
+
+- Home (index.html)
+  - Main Slider
+  - Quick Facts
+
+- About Mithila (about.html)
+  - Historical Background
+  - Mithila in Nepal (Districts Table)
+  - Mithila in India
+  - Nepal vs India Comparison
+
+- Culture & Art (culture.html)
+  - Madhubani Art Styles
+  - Festivals
+  - Traditional Food
+  - Social Customs
+
+- Photo Gallery (gallery.html)
+  - Lightbox Image Viewer (9 Images)
+
+- Visit Mithila (tips.html)
+  - Getting There (Travel Table)
+  - Must-See Places
+  - Budget & Visitor Tips
+
+- Contact Us (contact.html)
+  - JavaScript Validated Form
+  - Contact Information Table
